@@ -1,0 +1,1158 @@
+* {
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "et line";
+src: url("../fonts/et-line.eot") format("eot"),
+  url("../fonts/et-line.ttf") format("ttf"),
+  url("../fonts/et-line.woff") format("woff");
+font-display: swap;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #777;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: 0 30;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* header style start */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 5px;
+}
+
+.logo__img {
+  margin-right: 9px;
+}
+
+.logo__text {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__link {
+  margin-right: 35px;
+  transition: color 0.5s linear;
+  color: #dedede;
+  text-transform: uppercase;
+}
+
+.navigation__link:hover {
+  color: black;
+}
+
+
+.header__menu-btn {
+  display: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  outline: none;
+}
+
+/* start banner style */
+
+.banner {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/banner-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner__title {
+  font-family: "Dosis" sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 54px;
+  color: #f6f6f6;
+  margin-bottom: 106px;
+}
+
+.inner__subtitle {
+  font-size: 19px;
+  letter-spacing: 2px;
+  color: #d2d2d2;
+}
+
+.banner-button {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border: none;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  outline: none;
+}
+
+.inside-button-box {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #4e4e4e;
+  border-bottom: 2px solid #4e4e4e;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+/* about us section */
+
+.about-us-section {
+  padding: 140px 0;
+  border-bottom: 1px solid #ececec;
+}
+
+.about-us-row-text {
+  margin-top: 84px;
+  margin-bottom: 109px;
+}
+
+.title-2 {
+  font-size: 18px;
+  line-height: auto;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 10px;
+}
+
+.about-us-text {
+  line-height: 26px;
+}
+
+.about-us-text--bigger {
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.about-us-text--bigger-author {
+  font-size: 11px;
+  margin-top: 38px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.about-us-pic {
+  filter: grayscale(100%);
+  transition: filter 0.5s linear;
+}
+
+.about-us-pic:hover {
+  filter: grayscale(0);
+}
+
+.about-us__under-photo-text {
+  font-family: "Dosis" sans-serif;
+  text-transform: uppercase;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.under-photo-text__name {
+  letter-spacing: 6px;
+  padding-bottom: 15px;
+}
+
+.under-photo-text__position {
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+/* services section start */
+.services {
+  margin-top: 140px;
+  margin-bottom: 174px;
+}
+
+.services-icons-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 122px;
+  margin-bottom: 85px;
+}
+
+.icon {
+ font-size: 48px;
+ margin-bottom: 37px;
+}
+
+.under-icon-text {
+  font-family: 'Dosis' sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.services-text {
+  line-height: 26px;
+}
+
+.services__icon-row-hover:hover {
+  color: #111111;
+}
+
+.icon-transition {
+  transition: color .5s linear;
+}
+
+/* lets talk section */
+
+.lets-talk-section {
+  background-color: #111111;
+}
+
+.lets-talk-title {
+  margin-top: 140px;
+  margin-bottom: 31px;
+  font-family: 'Dosis' sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #9f9f9f;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.lets-talk-text {
+  color: #a9a9a9;
+  line-height: 26px;
+}
+
+.lets-talk-button {
+  margin-top: 44px;
+  margin-bottom: 140px;
+  width: 139px;
+  height: 40px;
+  background-color: #cfcfcf;
+  color: #111111;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 4px;
+}
+
+.lets-talk-img-wrapper {
+  position: relative;
+}
+
+.lets-talk-img {
+  position: absolute;
+  top: -32px;
+}
+
+/* like our works section */
+.like-our-works {
+  background-color: #111111;
+}
+
+.like-our-works__wrapper {
+  padding-top: 70px;
+  padding-bottom: 70px;  
+  font-family: 'Dosis';
+  
+}
+
+.like-our-works__text {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #9f9f9f;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.like-our-works__button {
+  background-color: #cfcfcf;
+  width: 214px;
+  height: 40px;
+  color: #111111;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+
+
+/* Why choose us section */
+.why-choose-us-section {
+  margin-top: 140px;
+  margin-bottom: 148px;
+}
+
+.why-choose-us__under-icon-long-text {
+  margin-top: 37px;
+  line-height: 26px;
+}
+
+.why-choose-us__card {
+  margin-top: 89px;
+}
+
+/* portfolio section */
+
+.title-portfolio {
+margin-top: 139px;
+margin-bottom: 83px;
+font-family: 'Dosis';
+font-size: 18px;
+text-transform: uppercase;
+letter-spacing: 10px;
+}
+
+.portfolio-text-container {
+width: 750px;
+margin: 0 auto;
+}
+
+.portfolio-text{
+  line-height: 26px;
+  font-size: 15px;
+  margin-bottom: 86px;
+}
+
+.portfolio-tabs {
+  margin-bottom: 51px;
+  font-family: 'Dosis';
+  font-size: 13px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs__item {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.tab-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-menu__item {
+  margin-right: 70px;
+}
+
+.tab-menu__item:last-child {
+  margin-right: 0;
+}
+
+.tabs__item {
+  display: none;
+
+  /* здесь написать стили для обертки */
+}
+
+.tabs__item--active {
+  display: block;
+}
+
+.map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map:hover .map__overlay {
+  top: 100%;
+}
+
+.map__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, .95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 1s linear;
+}
+
+.original--moderated {
+  color: green;
+}
+.original {
+  margin-top: 50px;
+  color:red;
+  font-size: 20px;
+}
+
+.tabs__wrapper {
+  display: flex;
+  justify-content: center; 
+}
+
+.img-portfolio {
+  filter: grayscale(100%);
+  transition: filter 1s linear;
+}
+.img-portfolio:hover {
+  filter: grayscale(0);
+  
+}
+
+.portfolio__text {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  color: #777777;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 86px;
+}
+
+/* review section style */
+
+.reviews {
+  background-color: #020202;
+  height: 483px;
+  color: #bcbcbc;
+  text-align: center;
+}
+
+.title-review {
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  letter-spacing: 6px;
+}
+
+.icon-reviews {
+  font-size: 32px;
+  margin-top: 140px;
+  margin-bottom: 23px;;
+}
+
+.title-6 {
+  font-family: 'Dosis';
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  margin-bottom: 48px;
+}
+
+.reviews__slider {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 30px;  
+}
+
+.reviews-text {
+  margin: 0 200px;
+}
+
+.reviews-name {
+  font-family: 'Open Sans';
+  font-size: 11px;
+  color: #707070;
+  line-height: 38px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.slide {
+  position: relative;
+}
+
+.slider-arrow--prev {
+  position: absolute;
+  top:-80px;
+  left: 0;
+  height: 0px;
+  width: 0px;
+  border-top: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #ffffff;
+  background-color: transparent;
+  outline: none;
+}
+
+.slider-arrow--next {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  height: 0px;
+  width: 0px;
+  border-top: 60px solid transparent;
+  border-right: 60px solid #ffffff;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid transparent;
+  background-color: transparent;
+  outline: none;
+}
+
+.slider-left {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border:1px solid black;
+  transform: rotate(45deg);
+  border-right:transparent;
+  border-top:transparent;
+  right:40px;
+  top:-3px;
+}
+
+.slider-right {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border:1px solid black;
+  transform: rotate(45deg);
+  border-left:transparent;
+  border-bottom:transparent;
+  left:40px;
+  top:-3px;
+}
+
+/* latest news section */
+
+.latest-news {
+  margin-bottom: 140px;
+}
+
+.latest-news-row {
+  margin-top: 140px;
+  margin-bottom: 81px;
+  letter-spacing: 10px;
+  font-family: 'Dosis';
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-left: 7px;
+}
+
+.latest-news-link {
+   font-size: 11px;
+   color: #999999;
+   letter-spacing: 5px;
+}
+
+.under-img-sign {
+  font-family: 'Dosis';
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #777777;
+  letter-spacing: 4px;
+  margin-top: 30px;
+  margin-bottom: 17px;
+}
+
+.under-img-sign__author {
+  font-size: 11px;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+.latest-news__colunm-text {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  line-height: 26px;
+  color: #777777;
+  margin-bottom: 30px;
+}
+
+.latest-news-button {
+  width: 117px;
+  height: 26px;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.latest-news-button_text {
+   font-family: 'Open Sans';
+  font-size: 11px;
+  line-height: 26px;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+/* stay informed section */
+
+.stay-informed-section {
+  height: 264px;
+  background-color: #f8f8f8;
+}
+
+.stay-informed-row {
+  font-family: 'Dosis';
+  font-size: 15px;
+  line-height: 26px;
+  color: #111111;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  display: flex;
+  justify-content: center;
+  padding-top: 81px;
+  margin-bottom: 35px;
+}
+
+.e-mail {
+  height: 36px;
+  width: 293px;
+  margin: 0 auto;
+}     
+
+input {
+  height: 36px;
+  font-family: 'Open Sans';
+  line-height: 26px;
+  font-size: 12px;
+  color:#777777;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 1px solid #dfdfdf;
+  border-radius:2px;
+}
+
+.enter-email-here-placeholder {
+  width: 293px;
+  padding-left:13px;
+  margin-right: 3px;
+}
+
+.subscribe {
+  background-color:#323232;
+  color:#ffffff;
+  border: #323232;
+  width: 128px;
+  margin-left: 2px;
+}
+
+.no-spam {
+  font-family: 'Open Sans';
+  font-style: 11px;
+  line-height: 26px;
+  color:#aaaaaa;
+  margin-top: 23px;
+}
+
+/* contact section  */ 
+
+.title-1 {
+ font-family: 'Dosis';
+ font-size: 18px;
+ color: #111;
+ text-transform: uppercase;
+ letter-spacing: 11px;
+ margin-top: 140px;
+ margin-bottom: 98px;
+}
+
+.contact {
+  height: 645px;
+}
+
+.contact-row {
+  padding-top: 17px;
+}
+
+.contact-text {
+  display: block;
+}
+
+.placeholder-name {
+  width: 380px;
+  margin: 5px;
+}
+
+.placeholder-email {
+  width: 380px;
+  margin: 5px;
+}
+
+.plaseholder-massage {
+  width: 380px;
+  margin: 5px;
+  height: 82px;
+}
+
+.form-block-relative {
+  position: relative;
+}
+
+.row-formblock {
+  margin-top: 82px;
+}
+
+.form-container {
+  width: 770px;
+  padding: 0; 
+}
+
+.submit-message {
+  width: 182px;
+  margin-left: 204px;
+  margin-top: 20px;
+}
+
+.fields-required {
+  margin-top: 36px;
+}
+
+.placeholder {
+  padding-left: 14px;
+}
+
+
+.contacts-icon-next-text {
+  margin-bottom: 13px;
+  font-family: 'Dosis';
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.contacts-icon-contact {
+  font-family: 'Open Sans';
+  font-family: 15px;
+  line-height: 24px;
+  color: #444444;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.img-logo-footer {
+    /* margin: 0 auto;
+    margin-bottom: 24px; */
+    /* margin-left: 300px; */
+    margin: 0 auto;
+}
+
+.icon-box {
+    margin-right: 15px;
+    height: 22px;
+    width: 22px;
+    background-color:#111111;
+    transform:rotate(45deg);
+    border-radius: 2px;
+}
+.fas {
+    font-size: 14px;
+    color:#fff;
+    transform: rotate(-45deg);
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.icon-box-footer {
+    background-color: #fff;
+    border: 1px solid black;
+}
+ .fab {
+    font-size: 14px;
+     transform: rotate(-45deg);
+     margin-top: 3px;
+     margin-left: 3px;
+ }
+
+ .footer {
+    height: 429px;
+    padding-top: 140px; 
+ }
+
+ .footer-rhythm-2014 {
+     text-align: center;
+     margin-top: 104px;
+     margin-bottom: 18px;
+ }
+
+ .footer-text {
+     text-align: center;
+ }
+
+ .fa-copyright {
+     color: #111;
+     font-size: 11px;
+ }
+ 
+ .footer-text-row {
+     text-align: center;
+ }
+
+ .img-logo-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.footer-text-row {
+  margin-top: 104px;
+  margin-bottom: 17px;
+}
+
+.fields-required-sm {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .header__navigation {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: calc(100% - 100px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1.8);
+    justify-content: center;
+    align-items: center;
+    transition: left .3s linear;
+    z-index: 9999;
+  }
+
+  .header__navigation--open {
+    display: flex;
+    left: 0;
+  }
+
+  .navigation__list {
+    display: block;
+  }
+
+  .navigation__item {
+    margin: 0 0 30px;
+    font-size: 20px;
+  }
+  
+  .header__menu-btn {
+    display: inline-block;
+  }
+  .inner__title {
+    letter-spacing: 30px;
+    margin-bottom: 40px;
+  }
+
+  .about-us-text--bigger-author {
+    margin-top: 0;
+  }
+
+  .about-us-text {
+    margin-bottom: 20px;
+  }
+
+  .about-us__under-photo-text {
+    padding-top: 10px;
+  }
+
+  .under-photo-text__position {
+    margin-bottom: 40px;
+  }
+
+  .under-icon-text {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .about-us-text--bigger {
+    font-size: 18px;
+  }
+
+  .services {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .services-text {
+    margin-bottom: 30px;
+  }
+  
+  .lets-talk-img-wrapper {
+    display: flex;
+  }
+  .lets-talk-img {
+    position: relative;
+    margin: 30px auto 0px;
+    justify-content: center;
+  }
+
+  .lets-talk-title {
+    margin-top: 30px;
+  }
+
+  .lets-talk-button {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-portfolio {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  } 
+
+  .portfolio-pic {
+    width: 80%;
+    margin: 0 auto; 
+  }
+
+  .why-choose-us-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .why-choose-us__card {
+    margin-top: 30px;
+  }
+
+  .icon {
+    margin-bottom: 10px;
+  }
+  
+  .why-choose-us__under-icon-long-text {
+    margin-top: 15px;
+    line-height: 20px;
+  }
+
+  .latest-news-row {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .latest-news-pic {
+    text-align: center;
+  }
+
+  .under-img-sign {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .under-img-sign__author {
+    margin-bottom: 10px;
+  }
+
+  .latest-news__colunm {
+    margin-bottom: 30px;
+  }
+
+  .latest-news {
+    margin-bottom: 0;
+  }
+  
+  .title-1 {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .contact-row-center {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .contacts-icon-next-text {
+    margin-bottom: 0;
+  }
+
+  .row-formblock {
+    margin-top: 20px;
+  }
+
+  .row-formblock {
+    display: flex;
+  }
+
+  .form-block-relative {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-message-center {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact {
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+  }
+
+  .footer-text-row {
+    margin-top: 50px;
+  }
+
+} 
+
+@media (max-width: 767px) {
+
+  .about-us-section {
+    padding: 20px;
+  }
+
+  .about-us-pic {
+    text-align: center;
+  }
+
+  .under-photo-text__name {
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+
+  .under-photo-text__position {
+    letter-spacing: 1px;
+    font-size: 11px;
+  }
+
+  .services-icons-wrapper {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    margin-bottom: 10px;
+  }
+
+  .under-icon-text {
+    margin-bottom: 40px;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .services-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .about-us-text--bigger {
+    font-size: 14px;
+  }
+
+  .lets-talk-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+
+  .lets-talk-text {
+    font-size: 12px;
+  }
+
+  .lets-talk-button {
+    font-size: 12px;
+  }
+
+  .title-portfolio {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    letter-spacing: 5px;
+  } 
+
+  .portfolio-text {
+    font-size: 12px;
+    margin-bottom: 30px;
+    line-height: 20pxTRF;
+  }
+
+  .tab-menu {
+    display: block;
+  }
+
+  .tab-menu__item {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .portfolio-pic {
+    width: 100%;
+    margin: 0 auto; 
+  }
+
+  .why-choose-us__under-icon-signature {
+    margin-bottom: 20px;
+  }
+  
+  .why-choose-us__under-icon-long-text {
+    margin-bottom: 0;
+  }
+
+  .latest-news__colunm-text {
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .fields-required {
+    display: none;
+  }
+
+  .fields-required-sm {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .lets-talk-img-wrapper {
+    display: none;
+  }
+}
