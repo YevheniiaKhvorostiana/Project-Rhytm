@@ -78,7 +78,7 @@ body {
 }
 
 .navigation__link:hover {
-  color: black;
+  color: grey;
 }
 
 
@@ -768,7 +768,7 @@ input {
   line-height: 24px;
   color: #444444;
   text-transform: capitalize;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .img-logo-footer {
@@ -790,20 +790,42 @@ input {
     font-size: 14px;
     color:#fff;
     transform: rotate(-45deg);
-    margin-top: 3px;
-    margin-left: 3px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+.fa-map-marker-alt {
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+.fa-envelope {
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .icon-box-footer {
     background-color: #fff;
     border: 1px solid black;
 }
- .fab {
+.fab {
     font-size: 14px;
      transform: rotate(-45deg);
      margin-top: 3px;
      margin-left: 3px;
  }
+
+.fa-facebook-f {
+  margin-left: 5px;
+ }
+
+.fa-linkedin-in {
+  margin-left: 5px;
+}
+
+.fa-pinterest-square {
+  margin-left: 4px;
+}
 
  .footer {
     height: 429px;
