@@ -377,6 +377,7 @@ margin: 0 auto;
  display: flex;
  flex-direction: row;
  justify-content: space-between;
+ text-align: center;
 }
 
 .tab-menu {
@@ -772,9 +773,6 @@ input {
 }
 
 .img-logo-footer {
-    /* margin: 0 auto;
-    margin-bottom: 24px; */
-    /* margin-left: 300px; */
     margin: 0 auto;
 }
 
@@ -808,6 +806,7 @@ input {
     background-color: #fff;
     border: 1px solid black;
 }
+
 .fab {
     font-size: 14px;
      transform: rotate(-45deg);
@@ -964,8 +963,8 @@ input {
   } 
 
   .portfolio-pic {
-    width: 80%;
-    margin: 0 auto; 
+    width: 400px;
+    /* margin: 0 auto;  */
   }
 
   .why-choose-us-section {
@@ -1177,4 +1176,5 @@ input {
   .lets-talk-img-wrapper {
     display: none;
   }
+
 }
